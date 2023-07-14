@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style: none;
+}
+.sub{
+  position: relative;
+  top: -70%;
+  width: 100px;
+  height: 25px;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+
+.gnb{
+
+  display: flex;
+  margin-left: 10px;
+  justify-content: flex-end;
+ 
+}
+.Global-nav-M{
+  
+  font-weight: 900;
+}
+.Local-nav{
+ /* display: flex;*/
+
+}
