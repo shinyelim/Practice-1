@@ -328,3 +328,34 @@ footer {
     border-top: 1px solid #ccc;
   }
 }
+.Modal-page{
+  position: fixed;
+  top: -10px;
+ transform: translate(28%,12%);
+  width: 100%;
+  z-index: 160;
+ 
+}
+.Modal-page img{
+  width: 40%;
+
+  
+ 
+}
+.Modal-btn{
+  position: relative;
+  bottom: 50%;
+  left: 38%;
+
+  border: none;
+}
+.Modal-check{
+  transform: translate(50%,50%);
+  
+}
+.modal-checky{
+
+}
+.Modal-page-txt{
+  transform: translate(50%,50%);
+}
