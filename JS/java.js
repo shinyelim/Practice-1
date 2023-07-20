@@ -1,41 +1,3 @@
-//사이드바 기능//
-// jQuery
-// $('.gnb-main-item').hover(function(){
-//   // gnb-main-item에 hover했을 때,
-//   // .sub class를 찾아서 slideDown()
-//   $(this).find('.sub').stop().slideDown(300);
-//   $(this).children('a').addClass('active');
-// }, function(){
-//   $(this).find('.sub').stop().slideUp(300);
-//   $(this).children('a').removeClass('active');
-// })
-
-
-// Vanilla JS
-let gnbItems = document.querySelectorAll('.gnb-main-item');
-
-gnbItems.forEach(function(item){
-  let subMenu = item.querySelector('.sub');
-
-  item.addEventListener('mouseover', function(){
-    subMenu.classList.add('active');
-    //gnb-main-item a on 클래스 추가시
-    //메인메뉴 바뀐 색으로 유지해줌(hover기능작동)
-    this.querySelector('a').classList.add('active');
-    //sub메뉴에 hover 기능을 했을때 유지하고,보여주게해줌//('active')('on')//
-  })
-  item.addEventListener('mouseleave',function () {
-    subMenu.classList.remove('active');
-    this.querySelector('a').classList.remove('active');
-
-    this.querySelector('a').classList.add('is-active');
-    this.querySelector('span').classList.remove('is-active');
-  })
-  //sub메뉴가 보이지않게 max-height = 0 을 설정해줌//
-  //sub메뉴을 보여주지않게 하는//
-  
-})
-
 //사이드바 기능(미디어쿼리에서만)//
 let openBtn = document.querySelector('.gnb-open-btn');
 let closeBtn = document.querySelector('.sidebar-btn');
@@ -74,7 +36,6 @@ buttons.forEach(function (button,index) {       //<-(slide 넘어가기 기능�
 })
 
 
-//팝업창 24시간동안 페이지에서 열지 않기//
-
+//팝업창 24시간동안 페이지에서 열지 않기/
 
 
